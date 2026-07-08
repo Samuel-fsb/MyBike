@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>MyBike</title>
+    <link rel="preconnect"
+    href="https://fonts.googleapis.com"
+    />
+    <link rel="preconnect"
+    href="https://fonts.gstatic.com"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+    />
+    <link rel="shortcut icon"
+    href="src/images/Favicon of the project MyBike.png"
+    type="image/x-icon">
+    <link
+      rel="stylesheet"
+      href="src/styles/main.scss"
+    />
+    <script
+      src="src/scripts/main.js"
+      defer
+    ></script>
+  </head>
+  <body>
+
+    <!-- HEADER OF THE SITE -->
+    <header class="header">
+      <div class="header__menu">
+        <img src="src/images/logo-white.png"
+        alt="logo" class="header__menu__logo">
+        <div class="header__menu__icons">
+          <img src="src/images/icons/Icon-Phone-call.png" alt="icon-phone"
+          class="header__menu__icons__small">
+          <img src="src/images/icons/Icon-Burger-menu.png" alt="icon-burger"
+          class="header__menu__icons__burger">
+        </div>
+      </div>
+      <h1 class="header__title">
+        Take the Streets
+      </h1>
+    </header>
+
+    <!-- MENU WITH SIDEBAR -->
+    <nav class="menu-lateral">
+      <div class="menu-lateral__icons">
+        <img src="src/images/logo-black.png" alt="logo-site"
+        class="menu-lateral__icons__logo">
+        <img src="src/images/icons/Icon-Close.png" alt="icon-close"
+        class="menu-lateral__icons__close">
+      </div>
+      <ul class="menu-lateral__itens">
+        <li><a href="#" class="menu-lateral__itens__selection">HOME</a></li>
+        <li><a href="#" class="menu-lateral__itens__selection">ABOUT US</a></li>
+        <li><a href="#" class="menu-lateral__itens__selection">COMPARE BIKES</a></li>
+        <li><a href="#" class="menu-lateral__itens__selection">DETAILS</a></li>
+        <li><a href="#" class="menu-lateral__itens__selection">CONTACTS</a></li>
+      </ul>
+      <div class="menu-lateral__contacts">
+        <p>+1 234 5555-55-55</p>
+        <p>Book a test ride</p>
+      </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+      <h1 class="hero__title">Move Free</h1>
+      <span class="hero__description">Shift your ride, not gears. Find the fastest way to move in the city as the bike adapts intuitively to power the speed you need.</span>
+    </section>
+
+    <!-- SECTION OF PRODUCTS -->
+    <h2 class="title-products">Compare Bikes</h2>
+    <main class="products">
+      <article class="products__bikes">
+        <img src="src/images/bike-Sporty 4.png"
+        alt="bike-sporty"
+        class="products__image">
+        <h3 class="products__product-name">Sporty 4</h3>
+        <span class="products__description">
+          The iconic frame brought to a new performance height as a sporty, active ride.
+        </span>
+        <p class="products__price">$ 2 590</p>
+      </article>
+
+      <article class="products__bikes">
+        <img src="src/images/bike-Ride in town ST.png"
+        alt="bike-ride-in-town-st"
+        class="products__image">
+        <h3 class="products__product-name">Ride in town ST</h3>
+        <span class="products__description">
+          An open frame for an upright riding position as the most comfortable ride in town.
+        </span>
+        <p class="products__price">$ 2 590</p>
+      </article>
+
+      <article class="products__bikes">
+        <img src="src/images/bike-Agile ride 3.png"
+        alt="bike-agile-ride-3"
+        class="products__image">
+        <h3 class="products__product-name">Agile ride 3</h3>
+        <span class="products__description">
+          The lightweight frame that has earned its street tread as a sleek, agile ride.
+        </span>
+        <p class="products__price">$ 2 090</p>
+      </article>
+    </main>
+
+    <!-- DETAILS OF PRODUCTS -->
+    <section class="details">
+      <h2 class="details__title-1">The Details</h2>
+      <article class="details__specifics">
+        <div class="details__position-image">
+          <img src="src/images/auto Unlock-smartphone.png"
+          alt="unlock-smartphone" class="details__image">
+          <img src="src/images/auto Unlock-brake.png"
+          alt="unlock-brake" class="details__image">
+        </div>
+        <h3 class="details__title-2">Auto Unlock</h3>
+        <span class="details__description">The app senses when you're nearby to unlock automatically. GPS tracking so you know where your bike is and can track it anytime.</span>
+      </article>
+
+      <article class="details__specifics">
+        <div class="details__position-image">
+          <img src="src/images/range & integrated lights-front.png"
+          alt="lights-front" class="details__image">
+          <img src="src/images/range & integrated lights-back.png"
+          alt="lights-back" class="details__image">
+        </div>
+        <h3 class="details__title">Range & Integrated lights</h3>
+        <span class="details__description">The removable battery has up to 70km battery autonomy and weighs only 2.4 kg. Lights integrated into the frame give you always-on visibility day and night.</span>
+      </article>
+
+      <article class="details__specifics">
+        <div class="details__position-image">
+          <img src="src/images/hydraulic disc brakes & lightweight-brake.png"
+          alt="hydraulic-disc-brakes" class="details__last-image">
+          <img src="src/images/hydraulic disc brakes & lightweight-brake-floor.png"
+          alt="hydraulic-disc-brake" class="details__last-image">
+        </div>
+        <h3 class="details__title">Hydraulic disc brakes & Lightweight</h3>
+        <span class="details__description">Brakes with total stopping power the second you make contact. The removable battery has up to 70km battery autonomy and weighs only 2.4 kg. Lights integrated into the frame give you always-on visibility day and night.</span>
+      </article>
+      <button class="details__button">Explore</button>
+    </section>
+
+
+    <!-- SECTION OF CONTACT -->
+    <form action="file.php" method="post"
+    class="contact-us">
+      <h2 class="contact-us__title">Contact Us</h2>
+
+      <div class="contact-us__contact">
+        <div class="contact-us__contact-information">
+          <label for="name">
+            <input type="text" name="name"
+            id="name" placeholder="name"
+            class="contact-us__information">
+          </label>
+          <label for="email">
+            <input type="email" name="email"
+            id="email" placeholder="email"
+            class="contact-us__information">
+          </label>
+          <label for="message">
+            <textarea name="message" id="message"
+            placeholder="message"
+            class="contact-us__message"></textarea>
+          </label>
+          <input type="submit" value="Send"
+          class="contact-us__button">
+        </div>
+
+        <div class="contact-us__information-address">
+          <span class="contact-us__information-address__font-normal">Phone <br> <p class="contact-us__information-address__font-medium">+1 234 5555-55-55</p></span>
+          <span class="contact-us__information-address__font-normal">Email <br> <p class="contact-us__information-address__font-medium">hello@miami.com</p></span>
+          <span class="contact-us__information-address__font-normal">Address <br> <p class="contact-us__information-address__font-medium">400 first ave. <br> suite 700 <br> Minneapolis, MN 55401</p></span>
+        </div>
+      </div>
+    </form>
+
+    <!-- FOOTER SECTION -->
+    <footer class="footer">
+      <img src="src/images/people-riding-bycicles.png"
+      alt="people-riding"
+      class="footer__image">
+    </footer>
+  </body>
+</html>
