@@ -7,7 +7,7 @@
   align-items: center;
   padding: 30px;
 
-  background-image: url(..src/images/main-bike.jpg);
+  background-image: url('../../images/main-bike.jpg');
   background-position: right;
   background-size: cover;
   min-height: 480px;
@@ -27,6 +27,19 @@
       display: flex;
       gap: 20px;
       cursor: pointer;
+
+      &__phone-number {
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.3s;
+      }
+
+      &__phone-number--show {
+        opacity: 1;
+        visibility: visible;
+        color: $font-color-white;
+        font-size: 12px;
+      }
 
       &__small {
         width: 24px;

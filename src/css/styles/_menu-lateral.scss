@@ -48,6 +48,24 @@
       font-weight: $font-semiBold;
       color: $font-color-black;
       cursor: pointer;
+      position: relative;
+
+      &::after {
+        content: "";
+        background-color: $background-black;
+        width: 0;
+        height: 2px;
+        position: absolute;
+        transition: 0.3s;
+        bottom: 0;
+        left: 0;
+       }
+
+      &:hover {
+        &::after {
+        width: 100%;
+       }
+      }
     }
   }
 

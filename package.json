@@ -4,8 +4,8 @@
   "description": "Landing page MyBike",
   "main": "index.js",
   "scripts": {
-  "sass:build": "sass css/styles/main.scss css/styles/style.css",
-  "sass:watch": "sass --watch css/styles/main.scss css/styles/style.css"
+  "sass:build": "sass src/css/styles/main.scss src/css/styles/style.css",
+  "sass:watch": "sass --watch src/css/styles/main.scss src/css/styles/style.css"
   },
   "keywords": [],
   "author": "",

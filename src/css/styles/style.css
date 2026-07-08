@@ -4,7 +4,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 30px;
-  background-image: url(..src/images/main-bike.jpg);
+  background-image: url("../../images/main-bike.jpg");
   background-position: right;
   background-size: cover;
   min-height: 480px;
@@ -22,6 +22,17 @@
   display: flex;
   gap: 20px;
   cursor: pointer;
+}
+.header__menu__icons__phone-number {
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+.header__menu__icons__phone-number--show {
+  opacity: 1;
+  visibility: visible;
+  color: #fff;
+  font-size: 12px;
 }
 .header__menu__icons__small {
   width: 24px;
@@ -86,6 +97,20 @@
   font-weight: 600;
   color: #1d1d1d;
   cursor: pointer;
+  position: relative;
+}
+.menu-lateral__itens__selection::after {
+  content: "";
+  background-color: #1d1d1d;
+  width: 0;
+  height: 2px;
+  position: absolute;
+  transition: 0.3s;
+  bottom: 0;
+  left: 0;
+}
+.menu-lateral__itens__selection:hover::after {
+  width: 100%;
 }
 .menu-lateral__contacts {
   font-weight: 600;
