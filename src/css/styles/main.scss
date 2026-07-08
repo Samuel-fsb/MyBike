@@ -1,0 +1,19 @@
+@use 'variables' as *;
+@use 'header' as *;
+@use 'menu-lateral' as *;
+@use 'hero' as *;
+@use 'products' as *;
+@use 'details' as *;
+@use 'contact' as *;
+@use 'footer' as *;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $font-family;
+  background-color: $background-black;
+}

@@ -1,3 +1,5 @@
+@use 'variables' as *; 
+
 .header {
   display: flex;
   flex-direction: column;
@@ -5,7 +7,7 @@
   align-items: center;
   padding: 30px;
 
-  background-image: url(../images/main-bike.jpg);
+  background-image: url(..src/images/main-bike.jpg);
   background-position: right;
   background-size: cover;
   min-height: 480px;

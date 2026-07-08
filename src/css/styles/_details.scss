@@ -1,3 +1,5 @@
+@use 'variables' as *; 
+
 .details {
   display: flex;
   flex-direction: column;
