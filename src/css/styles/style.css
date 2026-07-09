@@ -9,45 +9,73 @@
   background-size: cover;
   min-height: 480px;
 }
+
 .header__menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
 }
+
 .header__menu__logo {
   height: 38px;
 }
+
 .header__menu__icons {
   display: flex;
+  align-items: center;
   gap: 20px;
+  position: relative; 
+}
+
+.header__menu__icons__phone-call {
+  width: 24px;
+  height: 24px;
   cursor: pointer;
 }
-.header__menu__icons__phone-number {
-  opacity: 0;
-  visibility: hidden;
-  transition: 0.3s;
-}
-.header__menu__icons__phone-number--show {
-  opacity: 1;
-  visibility: visible;
-  color: #fff;
-  font-size: 12px;
-}
-.header__menu__icons__small {
+
+.header__menu__icons__burger {
   width: 24px;
   height: 24px;
 }
+
+.header__menu__icons__phone-number {
+  display: none;
+}
+
 .header__title {
   align-self: center;
   font-weight: 700;
   color: #fff;
 }
+
 @media (min-width: 744px) {
   .header__title {
     font-size: 64px;
   }
+
+  .header__menu__icons__phone-number {
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 80px; 
+    
+    white-space: nowrap;
+    color: #fff;
+    font-size: 12px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+
+  .header__menu__icons__phone-call:hover + .header__menu__icons__phone-number {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(-50%) translateX(-5px);
+  }
 }
+
 @media (min-width: 1260px) {
   .header {
     font-size: 80px;

@@ -29,19 +29,6 @@
       cursor: pointer;
 
       &__phone-number {
-        opacity: 0;
-        visibility: hidden;
-        transition: 0.3s;
-      }
-
-      &__phone-number--show {
-        opacity: 1;
-        visibility: visible;
-        color: $font-color-white;
-        font-size: 12px;
-      }
-
-      &__small {
         width: 24px;
         height: 24px;
       }
@@ -55,10 +42,47 @@
   }
 
   @media (min-width: 744px) {
-    &__title {
-      font-size: 64px;
+  &__title {
+    font-size: 64px;
+  }
+
+  // Container dos ícones (ajustado para fixar tudo no canto direito)
+  &__icons {
+    display: inline-flex; /* Faz o container ocupar apenas o tamanho dos ícones */
+    align-items: center;
+    gap: 16px; /* Espaço fixo e controlado entre os elementos */
+    margin-left: auto; /* Empurra todo o bloco de ícones para a extrema direita */
+
+    // O número de telefone
+    &__phone-number {
+      font-size: 14px;
+      color: $font-color-white;
+      white-space: nowrap;
+      
+      // Controladores de visibilidade (Começa invisível)
+      display: none; /* Método simples e direto para testar o funcionamento */
+    }
+
+    // O ícone do telefone
+    &__phone-call {
+      width: 24px;
+      height: 24px;
+      cursor: pointer;
+    }
+
+    // O ícone do menu burger
+    &__burger {
+      width: 24px;
+      height: 24px;
+      cursor: pointer;
+    }
+
+    // AÇÃO DE HOVER (Escrevendo a classe cheia para garantir que o Sass não erre)
+    &__phone-call:hover + .header__menu__icons__phone-number {
+      display: inline-block;
     }
   }
+}
 
   @media (min-width: 1260px) {
     font-size: 80px;
