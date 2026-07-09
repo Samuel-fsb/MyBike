@@ -13,7 +13,6 @@
   top: 0;
   right: 0;
   width: 100%;
-  max-width: 320px;
   height: 100vh;
   transform: translateX(100%);
   transition: transform 300ms ease;
@@ -54,7 +53,7 @@
         content: "";
         background-color: $background-black;
         width: 0;
-        height: 2px;
+        height: 1px;
         position: absolute;
         transition: 0.3s;
         bottom: 0;
@@ -70,18 +69,32 @@
   }
 
   &__contacts {
+    display: inline-block;
     font-weight: $font-semiBold;
+    position: relative;
+
+    &__bottom-bar {
+      &::after {
+        content: "";
+        background-color: $background-black;
+        width: 100%;
+        height: 1px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+      }
+    }
   }
 
   @media (min-width: 744px) {
-    max-width: 744px;
+    
   }
 
   @media (min-width: 1260px) {
-    max-width: 1260px;
+    
   }
 }
 
 .menu-lateral--open {
-  transform: translate(0);
+  transform: translateX(0);
 }

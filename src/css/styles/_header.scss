@@ -46,38 +46,32 @@
     font-size: 64px;
   }
 
-  // Container dos ícones (ajustado para fixar tudo no canto direito)
   &__icons {
-    display: inline-flex; /* Faz o container ocupar apenas o tamanho dos ícones */
+    display: inline-flex; 
     align-items: center;
-    gap: 16px; /* Espaço fixo e controlado entre os elementos */
-    margin-left: auto; /* Empurra todo o bloco de ícones para a extrema direita */
+    gap: 16px;
+    margin-left: auto;
 
-    // O número de telefone
     &__phone-number {
       font-size: 14px;
       color: $font-color-white;
       white-space: nowrap;
-      
-      // Controladores de visibilidade (Começa invisível)
-      display: none; /* Método simples e direto para testar o funcionamento */
+
+      display: none;
     }
 
-    // O ícone do telefone
     &__phone-call {
       width: 24px;
       height: 24px;
       cursor: pointer;
     }
 
-    // O ícone do menu burger
     &__burger {
       width: 24px;
       height: 24px;
       cursor: pointer;
     }
 
-    // AÇÃO DE HOVER (Escrevendo a classe cheia para garantir que o Sass não erre)
     &__phone-call:hover + .header__menu__icons__phone-number {
       display: inline-block;
     }

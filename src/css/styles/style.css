@@ -9,73 +9,59 @@
   background-size: cover;
   min-height: 480px;
 }
-
 .header__menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
 }
-
 .header__menu__logo {
   height: 38px;
 }
-
 .header__menu__icons {
   display: flex;
-  align-items: center;
   gap: 20px;
-  position: relative; 
-}
-
-.header__menu__icons__phone-call {
-  width: 24px;
-  height: 24px;
   cursor: pointer;
 }
-
-.header__menu__icons__burger {
+.header__menu__icons__phone-number {
   width: 24px;
   height: 24px;
 }
-
-.header__menu__icons__phone-number {
-  display: none;
-}
-
 .header__title {
   align-self: center;
   font-weight: 700;
   color: #fff;
 }
-
 @media (min-width: 744px) {
   .header__title {
     font-size: 64px;
   }
-
-  .header__menu__icons__phone-number {
-    display: block;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 80px; 
-    
-    white-space: nowrap;
-    color: #fff;
-    font-size: 12px;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.3s ease, transform 0.3s ease;
+  .header__icons {
+    display: inline-flex;
+    align-items: center;
+    gap: 16px;
+    margin-left: auto;
   }
-
-  .header__menu__icons__phone-call:hover + .header__menu__icons__phone-number {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(-50%) translateX(-5px);
+  .header__icons__phone-number {
+    font-size: 14px;
+    color: #fff;
+    white-space: nowrap;
+    display: none;
+  }
+  .header__icons__phone-call {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+  }
+  .header__icons__burger {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+  }
+  .header__icons__phone-call:hover + .header__menu__icons__phone-number {
+    display: inline-block;
   }
 }
-
 @media (min-width: 1260px) {
   .header {
     font-size: 80px;
@@ -93,7 +79,6 @@
   top: 0;
   right: 0;
   width: 100%;
-  max-width: 320px;
   height: 100vh;
   transform: translateX(100%);
   transition: transform 300ms ease;
@@ -131,7 +116,7 @@
   content: "";
   background-color: #1d1d1d;
   width: 0;
-  height: 2px;
+  height: 1px;
   position: absolute;
   transition: 0.3s;
   bottom: 0;
@@ -141,21 +126,21 @@
   width: 100%;
 }
 .menu-lateral__contacts {
+  display: inline-block;
   font-weight: 600;
+  position: relative;
 }
-@media (min-width: 744px) {
-  .menu-lateral {
-    max-width: 744px;
-  }
+.menu-lateral__contacts__bottom-bar::after {
+  content: "";
+  background-color: #1d1d1d;
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
-@media (min-width: 1260px) {
-  .menu-lateral {
-    max-width: 1260px;
-  }
-}
-
 .menu-lateral--open {
-  transform: translate(0);
+  transform: translateX(0);
 }
 
 .hero {
@@ -506,7 +491,8 @@
 .footer__image {
   width: 100%;
   height: 200px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   display: block;
 }
 @media (min-width: 744px) {
@@ -529,6 +515,4 @@ body {
   padding: 0;
   font-family: "Poppins", Arial, sans-serif;
   background-color: #1d1d1d;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
