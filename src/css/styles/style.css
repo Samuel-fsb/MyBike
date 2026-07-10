@@ -26,7 +26,13 @@
   width: 100%;
 }
 .header__menu__logo {
+  display: block;
   height: 38px;
+}
+@media (min-width: 1260px) {
+  .header__menu__logo {
+    font-size: 80px;
+  }
 }
 .header__menu__icons {
   display: flex;
@@ -38,33 +44,38 @@
     display: inline-flex;
     align-items: center;
     gap: 16px;
-    margin-left: auto;
   }
 }
 .header__menu__icons__phone-number {
-  width: 24px;
-  height: 24px;
+  display: none;
 }
 @media (min-width: 744px) {
   .header__menu__icons__phone-number {
+    display: inline-block;
+    order: 1;
     font-size: 14px;
     color: #fff;
     white-space: nowrap;
-    display: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease;
   }
 }
 @media (min-width: 744px) {
   .header__menu__icons__phone-call {
+    order: 2;
     width: 24px;
     height: 24px;
     cursor: pointer;
   }
   .header__menu__icons__phone-call:hover + .header__menu__icons__phone-number {
-    display: inline-block;
+    visibility: visible;
+    opacity: 1;
   }
 }
 @media (min-width: 744px) {
   .header__menu__icons__burger {
+    order: 3;
     width: 24px;
     height: 24px;
     cursor: pointer;
@@ -141,7 +152,7 @@
 .menu-lateral__contacts__bottom-bar::after {
   content: "";
   background-color: #1d1d1d;
-  width: 100%;
+  width: 80%;
   height: 1px;
   position: absolute;
   bottom: 0;
@@ -431,6 +442,15 @@
 }
 .contact-us__information-address__font-medium {
   font-weight: 500;
+  transition: color 0.3s ease;
+  color: #fff;
+  text-decoration: none;
+}
+@media (min-width: 744px) {
+  .contact-us__information-address__font-medium:hover {
+    color: #7e7e83;
+    cursor: pointer;
+  }
 }
 @media (min-width: 744px) {
   .contact-us__title {

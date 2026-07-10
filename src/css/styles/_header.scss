@@ -28,7 +28,12 @@
     width: 100%;
 
     &__logo {
+      display: block;
       height: 38px;
+  
+      @media (min-width: 1260px) {
+       font-size: 80px; 
+      }
     }
 
     &__icons {
@@ -40,35 +45,40 @@
         display: inline-flex; 
         align-items: center;
         gap: 16px;
-        margin-left: auto;
       }
 
       &__phone-number {
-        width: 24px;
-        height: 24px;
+        display: none;
 
         @media (min-width: 744px) {
+          display: inline-block;
+          order: 1;
           font-size: 14px;
           color: $font-color-white;
           white-space: nowrap;
-          display: none;
+          opacity: 0;
+          visibility: hidden;
+          transition: opacity 0.3s ease;
         }
       }
 
       &__phone-call {
         @media (min-width: 744px) {
+          order: 2;
           width: 24px;
           height: 24px;
           cursor: pointer;
 
           &:hover + .header__menu__icons__phone-number {
-            display: inline-block;
+            visibility: visible;
+            opacity: 1;
           }
         }
       }
 
       &__burger {
         @media (min-width: 744px) {
+          order: 3;
           width: 24px;
           height: 24px;
           cursor: pointer;
