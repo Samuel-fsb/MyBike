@@ -1,4 +1,4 @@
-@use 'variables' as *; 
+@use 'variables' as *;
 
 .header {
   display: flex;
@@ -6,17 +6,25 @@
   justify-content: space-between;
   align-items: center;
   padding: 30px;
-
   background-image: url('../../images/main-bike.jpg');
   background-position: right;
   background-size: cover;
   min-height: 480px;
 
+  &__title {
+    align-self: center;
+    font-weight: $font-bold;
+    color: $font-color-white;
+
+    @media (min-width: 744px) {
+      font-size: 64px;
+    }
+  }
+
   &__menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     width: 100%;
 
     &__logo {
@@ -28,57 +36,48 @@
       gap: 20px;
       cursor: pointer;
 
+      @media (min-width: 744px) {
+        display: inline-flex; 
+        align-items: center;
+        gap: 16px;
+        margin-left: auto;
+      }
+
       &__phone-number {
         width: 24px;
         height: 24px;
+
+        @media (min-width: 744px) {
+          font-size: 14px;
+          color: $font-color-white;
+          white-space: nowrap;
+          display: none;
+        }
+      }
+
+      &__phone-call {
+        @media (min-width: 744px) {
+          width: 24px;
+          height: 24px;
+          cursor: pointer;
+
+          &:hover + .header__menu__icons__phone-number {
+            display: inline-block;
+          }
+        }
+      }
+
+      &__burger {
+        @media (min-width: 744px) {
+          width: 24px;
+          height: 24px;
+          cursor: pointer;
+        }
       }
     }
   }
 
-  &__title {
-    align-self: center;
-    font-weight: $font-bold;
-    color: $font-color-white;
-  }
-
-  @media (min-width: 744px) {
-  &__title {
-    font-size: 64px;
-  }
-
-  &__icons {
-    display: inline-flex; 
-    align-items: center;
-    gap: 16px;
-    margin-left: auto;
-
-    &__phone-number {
-      font-size: 14px;
-      color: $font-color-white;
-      white-space: nowrap;
-
-      display: none;
-    }
-
-    &__phone-call {
-      width: 24px;
-      height: 24px;
-      cursor: pointer;
-    }
-
-    &__burger {
-      width: 24px;
-      height: 24px;
-      cursor: pointer;
-    }
-
-    &__phone-call:hover + .header__menu__icons__phone-number {
-      display: inline-block;
-    }
-  }
-}
-
   @media (min-width: 1260px) {
-    font-size: 80px;
+    font-size: 80px; 
   }
 }

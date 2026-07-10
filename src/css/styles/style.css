@@ -9,6 +9,16 @@
   background-size: cover;
   min-height: 480px;
 }
+.header__title {
+  align-self: center;
+  font-weight: 700;
+  color: #fff;
+}
+@media (min-width: 744px) {
+  .header__title {
+    font-size: 64px;
+  }
+}
 .header__menu {
   display: flex;
   justify-content: space-between;
@@ -23,43 +33,41 @@
   gap: 20px;
   cursor: pointer;
 }
-.header__menu__icons__phone-number {
-  width: 24px;
-  height: 24px;
-}
-.header__title {
-  align-self: center;
-  font-weight: 700;
-  color: #fff;
-}
 @media (min-width: 744px) {
-  .header__title {
-    font-size: 64px;
-  }
-  .header__icons {
+  .header__menu__icons {
     display: inline-flex;
     align-items: center;
     gap: 16px;
     margin-left: auto;
   }
-  .header__icons__phone-number {
+}
+.header__menu__icons__phone-number {
+  width: 24px;
+  height: 24px;
+}
+@media (min-width: 744px) {
+  .header__menu__icons__phone-number {
     font-size: 14px;
     color: #fff;
     white-space: nowrap;
     display: none;
   }
-  .header__icons__phone-call {
+}
+@media (min-width: 744px) {
+  .header__menu__icons__phone-call {
     width: 24px;
     height: 24px;
     cursor: pointer;
   }
-  .header__icons__burger {
-    width: 24px;
-    height: 24px;
-    cursor: pointer;
-  }
-  .header__icons__phone-call:hover + .header__menu__icons__phone-number {
+  .header__menu__icons__phone-call:hover + .header__menu__icons__phone-number {
     display: inline-block;
+  }
+}
+@media (min-width: 744px) {
+  .header__menu__icons__burger {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
   }
 }
 @media (min-width: 1260px) {
