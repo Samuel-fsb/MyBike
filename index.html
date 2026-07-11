@@ -41,8 +41,10 @@
           <img src="src/images/icons/Icon-Phone-call.png" alt="icon-phone"
           class="header__menu__icons__phone-call">
           <span class="header__menu__icons__phone-number">+1 234 555-55-55</span>
-          <img src="src/images/icons/Icon-Burger-menu.png" alt="icon-burger"
-          class="header__menu__icons__burger">
+          <a href="#mobile-menu">
+            <img src="src/images/icons/Icon-Burger-menu.png" alt="icon-burger"
+            class="header__menu__icons__burger">
+          </a>
         </div>
       </div>
       <h1 class="header__title">
@@ -51,12 +53,14 @@
     </header>
 
     <!-- MENU WITH SIDEBAR -->
-    <nav class="menu-lateral">
+    <nav class="menu-lateral" id="mobile-menu">
       <div class="menu-lateral__icons">
         <img src="src/images/logo-black.png" alt="logo-site"
         class="menu-lateral__icons__logo">
-        <img src="src/images/icons/Icon-Close.png" alt="icon-close"
-        class="menu-lateral__icons__close">
+        <a href="#">
+          <img src="src/images/icons/Icon-Close.png" alt="icon-close"
+          class="menu-lateral__icons__close">
+        </a>
       </div>
       <ul class="menu-lateral__itens">
         <li><a href="#" class="menu-lateral__itens__selection">HOME</a></li>
@@ -161,24 +165,24 @@
 
     <!-- SECTION OF CONTACT -->
     <form action="file.php" method="post"
-    class="contact-us">
+    class="contact-us" onsubmit="this.reset(); return false;">
       <h2 class="contact-us__title">Contact Us</h2>
 
       <div class="contact-us__contact">
         <div class="contact-us__contact-information">
           <label for="name">
             <input type="text" name="name"
-            id="name" placeholder="name"
-            class="contact-us__information">
+            id="name" placeholder="Samuel Bezerra"
+            class="contact-us__information" required>
           </label>
           <label for="email">
             <input type="email" name="email"
-            id="email" placeholder="email"
-            class="contact-us__information">
+            id="email" placeholder="samuel@email.com"
+            class="contact-us__information" required>
           </label>
           <label for="message">
             <textarea name="message" id="message"
-            placeholder="message"
+            placeholder="Your message" required
             class="contact-us__message"></textarea>
           </label>
           <input type="submit" value="Send"

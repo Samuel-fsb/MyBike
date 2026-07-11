@@ -98,3 +98,17 @@
 .menu-lateral--open {
   transform: translateX(0);
 }
+
+.menu-lateral:has(#mobile-menu:target) {
+  overflow: hidden;
+}
+
+.menu-lateral {
+  overflow: auto; 
+}
+.menu-lateral__icons {
+  position: sticky; 
+  top: 0;
+  z-index: 1;
+  background-color: $background-beige;
+}
