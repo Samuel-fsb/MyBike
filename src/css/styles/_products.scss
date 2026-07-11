@@ -37,6 +37,15 @@
     &__bikes {
       width: 280px;
     }
+
+    &__image {
+      transition: transform 0.3s ease;
+      cursor: pointer;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
   }
 
   @media (min-width: 1260px) {

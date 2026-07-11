@@ -234,6 +234,13 @@
   .products__bikes {
     width: 280px;
   }
+  .products__image {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+  .products__image:hover {
+    transform: scale(1.1);
+  }
 }
 @media (min-width: 1260px) {
   .products {
