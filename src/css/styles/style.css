@@ -158,6 +158,7 @@
   bottom: 0;
   left: 0;
 }
+
 .menu-lateral--open {
   transform: translateX(0);
 }
