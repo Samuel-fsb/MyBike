@@ -538,11 +538,9 @@
   justify-content: center;
   align-items: center;
   gap: 10px;
-  /*
   position: sticky;
   z-index: -1;
   bottom: 0;
-  */
 }
 .footer__image {
   width: 100%;
@@ -570,5 +568,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Poppins", Arial, sans-serif;
+}
+
+main {
   background-color: #1d1d1d;
 }/*# sourceMappingURL=style.css.map */
