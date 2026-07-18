@@ -87,18 +87,19 @@
   }
 }
 
-.menu-lateral--open {
-  transform: translateX(0);
-}
-
-.menu-lateral:has(#mobile-menu:target) {
+.page:has(.menu:target) {
   overflow: hidden;
 }
 
-.menu-lateral {
+.menu--open {
+  transform: translateX(0);
+}
+
+.menu {
   overflow: auto; 
 }
-.menu-lateral__icons {
+
+.menu__icons {
   position: sticky; 
   top: 0;
   z-index: 1;

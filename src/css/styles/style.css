@@ -87,7 +87,7 @@
   }
 }
 
-.menu-lateral {
+.menu {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -103,19 +103,19 @@
   transition: transform 300ms ease;
   z-index: 100;
 }
-.menu-lateral__icons {
+.menu__icons {
   display: flex;
   justify-content: space-between;
   width: 100%;
 }
-.menu-lateral__icons__logo {
+.menu__icons__logo {
   height: 38px;
 }
-.menu-lateral__icons__close {
+.menu__icons__close {
   width: 24px;
   height: 24px;
 }
-.menu-lateral__itens {
+.menu__itens {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -123,7 +123,7 @@
   margin: 0;
   padding: 0;
 }
-.menu-lateral__itens__selection {
+.menu__itens__selection {
   list-style: none;
   text-decoration: none;
   font-weight: 600;
@@ -131,7 +131,7 @@
   cursor: pointer;
   position: relative;
 }
-.menu-lateral__itens__selection::after {
+.menu__itens__selection::after {
   content: "";
   background-color: #1d1d1d;
   width: 0;
@@ -141,15 +141,15 @@
   bottom: 0;
   left: 0;
 }
-.menu-lateral__itens__selection:hover::after {
+.menu__itens__selection:hover::after {
   width: 100%;
 }
-.menu-lateral__contacts {
+.menu__contacts {
   display: inline-block;
   font-weight: 600;
   position: relative;
 }
-.menu-lateral__contacts__bottom-bar::after {
+.menu__contacts__bottom-bar::after {
   content: "";
   background-color: #1d1d1d;
   width: 80%;
@@ -159,19 +159,19 @@
   left: 0;
 }
 
-.menu-lateral--open {
-  transform: translateX(0);
-}
-
-.menu-lateral:has(#mobile-menu:target) {
+.page:has(.menu:target) {
   overflow: hidden;
 }
 
-.menu-lateral {
+.menu--open {
+  transform: translateX(0);
+}
+
+.menu {
   overflow: auto;
 }
 
-.menu-lateral__icons {
+.menu__icons {
   position: sticky;
   top: 0;
   z-index: 1;
@@ -308,13 +308,20 @@
   display: flex;
   gap: 25px;
 }
-.details__image {
-  width: 140px;
-  height: 130px;
+.details__image, .details__last-image {
+  overflow: hidden;
+  display: block;
+  cursor: pointer;
 }
-.details__last-image {
-  width: 140px;
-  height: 130px;
+.details__image img, .details__last-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: transform 0.3s ease;
+}
+.details__image:hover img, .details__last-image:hover img {
+  transform: scale(1.1);
 }
 .details__title-2 {
   font-size: 24px;
