@@ -7,7 +7,7 @@
   background-image: url("../../images/main-bike.jpg");
   background-position: right;
   background-size: cover;
-  min-height: 480px;
+  min-height: 100vh;
 }
 .header__title {
   align-self: center;
@@ -467,17 +467,17 @@
   padding: 40px 30px 60px;
   text-align: left;
 }
-.contact-us__information-address__font-normal {
+.contact-us__font-normal {
   font-weight: 400;
 }
-.contact-us__information-address__font-medium {
+.contact-us__font-medium {
   font-weight: 500;
   transition: color 0.3s ease;
   color: #fff;
   text-decoration: none;
 }
 @media (min-width: 744px) {
-  .contact-us__information-address__font-medium:hover {
+  .contact-us__font-medium:hover {
     color: #7e7e83;
     cursor: pointer;
   }
