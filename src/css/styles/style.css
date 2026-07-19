@@ -25,56 +25,57 @@
   align-items: center;
   width: 100%;
 }
-.header__menu__logo {
+.header__logo {
   display: block;
   height: 38px;
 }
 @media (min-width: 1260px) {
-  .header__menu__logo {
+  .header__logo {
     font-size: 80px;
   }
 }
-.header__menu__icons {
+.header__icons {
   display: flex;
   gap: 20px;
   cursor: pointer;
 }
 @media (min-width: 744px) {
-  .header__menu__icons {
+  .header__icons {
     display: inline-flex;
     align-items: center;
     gap: 16px;
   }
 }
-.header__menu__icons__phone-number {
-  display: none;
-}
 @media (min-width: 744px) {
-  .header__menu__icons__phone-number {
+  .header__phone-number {
     display: inline-block;
     order: 1;
     font-size: 14px;
     color: #fff;
     white-space: nowrap;
-    opacity: 0;
-    visibility: hidden;
     transition: opacity 0.3s ease;
   }
 }
-@media (min-width: 744px) {
-  .header__menu__icons__phone-call {
-    order: 2;
-    width: 24px;
-    height: 24px;
-    cursor: pointer;
-  }
-  .header__menu__icons__phone-call:hover + .header__menu__icons__phone-number {
-    visibility: visible;
-    opacity: 1;
-  }
+.header__phone-number .number {
+  display: none;
+  font-size: 14px;
+  color: #fff;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease;
 }
 @media (min-width: 744px) {
-  .header__menu__icons__burger {
+  .header__phone-number .number {
+    display: inline-block;
+  }
+}
+.header__phone-number:hover .number {
+  visibility: visible;
+  opacity: 1;
+}
+@media (min-width: 744px) {
+  .header__burger {
     order: 3;
     width: 24px;
     height: 24px;
@@ -123,7 +124,7 @@
   margin: 0;
   padding: 0;
 }
-.menu__itens__selection {
+.menu__selection {
   list-style: none;
   text-decoration: none;
   font-weight: 600;
@@ -131,7 +132,7 @@
   cursor: pointer;
   position: relative;
 }
-.menu__itens__selection::after {
+.menu__selection::after {
   content: "";
   background-color: #1d1d1d;
   width: 0;
@@ -141,7 +142,7 @@
   bottom: 0;
   left: 0;
 }
-.menu__itens__selection:hover::after {
+.menu__selection:hover::after {
   width: 100%;
 }
 .menu__contacts {
