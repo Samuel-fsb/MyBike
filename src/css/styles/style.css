@@ -48,8 +48,9 @@
 }
 @media (min-width: 744px) {
   .header__phone-number {
-    display: inline-block;
+    display: flex;
     order: 1;
+    align-items: center;
     font-size: 14px;
     color: #fff;
     white-space: nowrap;
@@ -80,11 +81,6 @@
     width: 24px;
     height: 24px;
     cursor: pointer;
-  }
-}
-@media (min-width: 1260px) {
-  .header {
-    font-size: 80px;
   }
 }
 
