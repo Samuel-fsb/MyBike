@@ -55,6 +55,7 @@
     color: #fff;
     white-space: nowrap;
     transition: opacity 0.3s ease;
+    text-decoration: none;
   }
 }
 .header__phone-number .number {
