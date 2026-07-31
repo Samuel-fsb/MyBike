@@ -24,7 +24,7 @@ Uma landing page responsiva desenvolvida para consolidar e colocar em prática c
 
 # 🔗 Links do Projeto
 * [Assista ao vídeo de demonstração no YouTube](https://youtu.be/rs7g8m9hUG4)
-* [Acesse a demonstração online da Landing Page](https://samuel-fsb.github.io/MyBike/)
+* [Acesse o projeto My Bike](https://samuel-fsb.github.io/MyBike/)
 
 # 🛠️ Como rodar localmente
 
