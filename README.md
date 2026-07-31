@@ -1,4 +1,4 @@
-<h1 align="center">My Bike</h1>
+<h1 align="center">My Bike🚲</h1>
 
 <p align="center">
   Landing page moderna e elegante para uma loja de bicicletas.
