@@ -20,10 +20,10 @@ Uma landing page responsiva desenvolvida para consolidar e colocar em prática c
 - **Envio de formulário:** O usuário pode preencher campos como nome, e-mail e mensagem para simular o envio de contato.
 - **Menu hambúrguer responsivo:** Menu lateral interativo com transição suave ao clicar no ícone.
 - **Efeitos nos botões e links:** Botões com efeito de sombra ao passar o mouse e links com sublinhado animado.
-- **Links de contato funcionais:** Atalhos para iniciar chamadas telefônicas, enviar e-mails diretamente e abrir a localização da loja.
+- **Links de contato funcionais:** Atalhos para iniciar chamadas, enviar e-mails diretamente e abrir a localização da loja.
 
 # 🔗 Links do Projeto
-* [Assista ao vídeo de demonstração no YouTube](https://youtu.be/3NwUDegzDn0)
+* [Assista ao vídeo de demonstração no YouTube](https://youtu.be/rs7g8m9hUG4)
 * [Acesse a demonstração online da Landing Page](https://samuel-fsb.github.io/MyBike/)
 
 # 🛠️ Como rodar localmente
@@ -51,8 +51,8 @@ git clone https://github.com/Samuel-fsb/MyBike
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 
 ### Conceitos e Técnicas
-- JavaScript ES6+: Manipulação do DOM para alternância de classes e controle do menu lateral.
-- Sass (SCSS): Uso de reuso de código, estilização avançada, pseudoelementos, transições e animações.
+- JavaScript: Manipulação do DOM para alterar as classes e controle do menu lateral.
+- Sass: Uso de reuso de código, estilização avançada, pseudoelementos, transições e animações.
 - Efeito Parallax: Posicionamento de imagens no fundo para profundidade visual.
 - HTML5 Semântico: Estruturação acessível e otimizada para SEO.
 - Arquitetura BEM: Organização limpa e escalável das classes CSS.
