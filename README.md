@@ -32,7 +32,7 @@ Siga os passos abaixo para testar o projeto no seu computador:
 
 1. Clone este repositório:
 ```bash
-git clone https://github.com/Samuel-fsb/MyBike
+git clone https://github.com/Samuel-fsb/MyBike.git
 ```
 
 2. Abra a pasta do projeto no seu terminal ou explorador de arquivos:
