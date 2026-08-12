@@ -113,7 +113,7 @@
   width: 24px;
   height: 24px;
 }
-.menu__itens {
+.menu__items {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -567,6 +567,10 @@
 
 * {
   box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
