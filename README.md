@@ -1,20 +1,16 @@
-<h1 align="center">My Bike🚲</h1>
+<h1 align="center">My Bike</h1>
 
 <p align="center">
   Landing page moderna e elegante para uma loja de bicicletas.
 </p>
 
-# 📝 Descrição do Projeto
+# Descrição do Projeto
 
 Uma landing page responsiva desenvolvida para consolidar e colocar em prática conceitos fundamentais de desenvolvimento web, incluindo Flexbox, Sass, JavaScript, HTML semântico, CSS, Media Queries, manipulação do DOM e o padrão de nomenclatura BEM.
 
 <img width="1901" height="900" alt="Demonstração da Landing Page My Bike" src="https://github.com/user-attachments/assets/46e9df73-b08c-4987-86b5-334c82a05a0a" />
 
-
-# 📈 Status do Projeto 
-✅ *Projeto Finalizado* 
-
-# ▶️ Funcionalidades do Projeto 
+# Funcionalidades do Projeto 
 - **Animação nas imagens:** Ao passar o mouse sobre as imagens, é aplicado um efeito de zoom.
 - **Efeito parallax no rodapé:** Exibição de imagem fixa no fundo ao chegar ao final da página, criando um efeito visual fluido.
 - **Envio de formulário:** O usuário pode preencher campos como nome, e-mail e mensagem para simular o envio de contato.
@@ -22,11 +18,11 @@ Uma landing page responsiva desenvolvida para consolidar e colocar em prática c
 - **Efeitos nos botões e links:** Botões com efeito de sombra ao passar o mouse e links com sublinhado animado.
 - **Links de contato funcionais:** Atalhos para iniciar chamadas, enviar e-mails diretamente e abrir a localização da loja.
 
-# 🔗 Links do Projeto
+# Links do Projeto
 * [Assista ao vídeo de demonstração no YouTube](https://youtu.be/rs7g8m9hUG4)
 * [Acesse o projeto My Bike](https://samuel-fsb.github.io/MyBike/)
 
-# 🛠️ Como rodar localmente
+# Como rodar localmente
 
 Siga os passos abaixo para testar o projeto no seu computador:
 
@@ -44,7 +40,7 @@ git clone https://github.com/Samuel-fsb/MyBike.git
 
 # Técnicas e Tecnologias Utilizadas
 
-### 💻 Linguagens e Ferramentas
+### Linguagens e Ferramentas
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
 ![SASS](https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white)
